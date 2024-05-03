@@ -31,8 +31,13 @@ html {
     padding: 0 2rem;
   }
   @media (max-width: 768px) {
-    .text-content h2 {
+    .text-content h2{
       font-size: 2.5rem;
+      align-items: center;
+    }
+    .top-button{
+      margin-bottom: 10rem;
+      align-items: center;
     }
   }
   @media (max-width: 99.8rem) {
@@ -67,7 +72,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 0 2rem;
   }
@@ -106,18 +111,17 @@ html {
   .right-content .image {
     width: 100%;
     height: auto;
-    margin-top: -20px;
+    margin-top: -2rem;
   }
   @media (max-width: 768px) {
     .right-content .image {
       width: 130%;
       max-width: none;
       margin-top: -11rem;
-      margin-left: 1;
     }
   }
   .arrow1{
-    width:70px;
+    width:7rem;
     height: 40px;
   }
 
@@ -170,13 +174,14 @@ html {
   }
   .button-container {
     margin-top: 2rem;
+    margin-left: 110px;
   }
   .button-container button {
     background-color: #fdf5e6;
     color: black;
     border: 2px solid black;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 20px;
     cursor: pointer;
   }
   .reverse-middle .project-details {
@@ -350,7 +355,7 @@ html {
   }
   @media only screen and (min-width: 768px) {
     .new-div .text-box p {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
   .expertise-item h3,
@@ -458,7 +463,7 @@ html {
     padding: 2rem;
   }
   .image-box img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
   }
   .contact-info-container {
@@ -487,10 +492,10 @@ html {
     margin-bottom: 1rem;
   }
   .info-text:first-child {
-    font-size: 5rem;
+    font-size: 8rem;
   }
   .info-text:nth-child(2) {
-    font-size: 1.4rem;
+    font-size: 3rem;
   }
   .info-text:not(:first-child):not(:nth-child(2)) {
     font-size: 1.6rem;
@@ -555,7 +560,7 @@ html {
     font-size: 3rem;
   }
   .expertise-right p {
-    font-family: 'Lexend ';
+    font-family: '"Roboto", sans-serif;';
     font-weight: normal;
     letter-spacing: 0.1em;
     line-height: 1.3;
@@ -572,4 +577,145 @@ html {
   .container-three-boxes .box h3 {
     white-space: nowrap;
   }
-  
+  /* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%; /* 10px */
+  background-color: #fdf5e6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Yellow div styles */
+
+.yellow-div {
+  background-color: #fdf5e6;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-content.image {
+  max-width: 100%;
+  height: auto;
+  margin-top: -20px;
+}
+
+/* Dark blue div styles */
+
+.dark-blue-div {
+  background-color: #1f2d54;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.dark-blue-div img {
+  max-width: 15%;
+  height: auto;
+}
+
+/* Project details styles */
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-box {
+  flex: 1;
+  text-align: left;
+  padding: 2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.image-box {
+  flex: 1;
+  padding: 2rem;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Media queries */
+
+/* Mobile devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+ .container {
+    padding: 0 1rem;
+  }
+ .yellow-div {
+    flex-direction: column;
+  }
+ .right-content {
+    margin-top: 2rem;
+  }
+ .project-details {
+    flex-direction: column;
+  }
+ .text-box {
+    font-size: 1.5rem;
+  }
+ .image-box {
+    margin-top: 2rem;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+ .container {
+    padding: 0 2rem;
+  }
+ .yellow-div {
+    flex-direction: column;
+  }
+ .right-content {
+    margin-top: 1rem;
+  }
+ .project-details{
+    flex-direction: column;
+  }
+ .text-box {
+    font-size: 1.8rem;
+  }
+ .image-box {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px){
+  html{
+    display: flex;
+  }
+  .round-aerrow{
+    height: 100px;
+  }
+  .button-container{
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 70px;
+   }
